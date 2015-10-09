@@ -222,7 +222,11 @@
     }());
 
     if (typeof React === 'undefined') {
-        React = AlloyEditor.React;
+        if (typeof require === 'function') {
+            React = require('react');
+        } else {
+            React = AlloyEditor.React;
+        }
     }
 
     if (typeof window !== 'undefined') {
