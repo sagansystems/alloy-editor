@@ -65,5 +65,8 @@
   "bugs": {
     "url": "https://github.com/liferay/alloy-editor/issues"
   },
-  "homepage": "http://alloyeditor.com"
+  "homepage": "http://alloyeditor.com",
+  "dependencies": {
+    "react": "^0.14.0"
+  }
 }
